@@ -11,18 +11,18 @@ if [ -z "${HOST}" ]; then
     exit 1
 fi
 
-params+=" -N ${HOST}"
+params="${params} -N ${HOST}"
 
 if [ -n "${PORT}" ]; then
-    params+=" -p ${PORT}"
+    params="${params} -p ${PORT}"
 fi
 
 if [ -n "${L}" ]; then
-    params+=" -L ${L}"
+    params="${params} -L ${L}"
 fi
 
 if [ -n "${D}" ]; then
-    params+=" -D ${D}"
+    params="${params} -D ${D}"
 fi
 
 echo ${params}
