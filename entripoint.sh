@@ -25,4 +25,6 @@ if [ -n "${D}" ]; then
     params+=" -D ${D}"
 fi
 
+echo ${params}
+
 autossh ${params}
