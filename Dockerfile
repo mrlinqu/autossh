@@ -8,9 +8,9 @@ RUN mkdir /root/.ssh \
 
 COPY entripoint.sh /entripoint.sh
 
-ENV HOST
-ENV PORT
-ENV L
-ENV D
+ENV HOST=""
+ENV PORT="22"
+ENV L=""
+ENV D=""
 
 ENTRYPOINT ["/entripoint.sh"]
