@@ -25,6 +25,6 @@ fi
 
 params="${params} ${HOST}"
 
-echo ${params}
+echo autossh ${params}
 
 autossh ${params}
